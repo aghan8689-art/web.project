@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راجستر صفحه</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            direction: rtl;
+            background-color: lightgray;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        *{
+            box-sizing: border-box;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background-color:  blue;
+        }
+        .logo{
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .navbar nav a{
+
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 16px;
+        }
+        .navbar nav a:hover,.navbar nav.active{
+            text-decoration: underline;
+        }
+        .login-section{
+            min-height: 90vh;
+            display: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .login-box{
+            background-color: white;
+            padding: 40px;
+             max-width: 400px;
+             width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px gray;
+        }
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: blue;
+
+            .input-group{
+                margin-bottom: 18px;
+            }
+        }
+        .input-group label{
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .input-group input,
+        .input-group select{
+            width: 100% ;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+           
+
+        }
+        .input-group input:focus,
+        .input-group select:focus{
+            border-color: blue ;
+            box-shadow: 0 0 5px blue;
+        }
+        .btn{
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background-color: darkblue;
+        }
+        .register-link{
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+        .register-link a{
+            color: blue;
+            text-decoration: none;
+        
+        }
+        .register-link a:hover{
+            text-decoration: underline;
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: blue;
+            color: white;
+            font-size: 14px;
+            margin-top: auto;
+        }
+        @media (max-width:768px){
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar nav{
+                margin-top: 10px;
+
+            }
+            .login-box{
+                width: 90%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">ددندوسیستم</div>
+        <nav>
+            <a href="home.html">کور پاڼه</a>
+            <a href="job.html">دندي</a>
+            <a href="login.html">ننوتل</a>
+            <a href="register.html">راجستر</a>
+        </nav>
+
+    </header>
+    <section  class="login-section">
+        <div class="login-box"></div>
+        <h2>نوی حساب جوړ کړئ</h2>
+        <form>
+            <div class="input-group">
+            <label>بشپړه نوم</label>
+            <input type="text"placeholder="خپل بریښنالیک داخیل کړئ"required>
+        </div>
+        <div class="input-group">
+            <label>بریښنالیک</label>
+            <input type="email"placeholder="خپل بریښنا لیک داخیل کړئ"required>
+            </div>
+            <div class="input-group">
+                <label>پټ نوم</label>
+                <input type="password"placeholder="پټ نوم جوړ کړئ"required>
+            </div>
+            <div class="input-group">
+                <label>پټ نوم تکرار کړئ</label>
+                <input type="password"placeholder="پټ نوم بیا تکرار کړئ"required>
+            </div>
+            <div class="input- group">
+                <label>دکارونکي ډول</label>
+                <select required>
+                    <option value="یو انتخاب کړئ"></option>
+                    <option>وظیفه پیداکونکی</option>
+                    <option>وظیفه ورکونکی</option>
+            </div>
+            <div>
+                <button type="submit"class="btn">راجستر</button>
+                <p class="register-link">مخکي حساب لری 
+                    <a href="login.html"> ننوتل</a>
+                </p>
+            </div>
+
+        
+        </form>
+
+        </div>
+    </section>
+    <footer>
+        <p>د۲۰۲۶ ددندو سیستم ټول حقوق خوندي دي</p>
+    </footer>
+</body>
+</html>

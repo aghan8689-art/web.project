@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ددندو صفتولو صفحه</title>
+    <style>
+        body{
+            direction: rtl;
+            background-color: lightgray;
+        }
+        .login-section{
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 15px;
+        }
+        .login-box{
+            background-color: white;
+            width: 100%;
+            max-width: 520px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px gray;
+        }
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 30px;
+            color: blue;
+        }
+        .input-group{
+            margin-bottom: 20px;
+        }
+        .input-group label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .input-group input:focus,
+        .input-group select:focus,
+        .input-group textarea:focus{
+            border-color: blue;
+            box-shadow: 0 0 6px blue;
+        }
+        .input-group textarea{
+            min-height: 100px;
+            resize: vertical;
+        }
+        .btn{
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+
+
+        }
+        .btn:hover{
+            background-color: darkblue;
+        }
+        @media(max-width:768px){
+            .login-box{
+                padding: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">ددندو سیستم</div>
+        <nav>
+            <a href="home.html">کور پاڼه</a>
+            <a href="jobs.html">دندي</a>
+            <a href="post-job.html" class="active">دندي ثبتول</a>
+        </nav>
+    </header>
+    <section class="login-section">
+        <div class="login-box"></div> 
+        <h2>نوې دنده ثبت کړئ</h2>
+        <form>
+            <div class="input-group">
+                <label>دندي عنوان</label>
+                <input type="text"placeholder="دندي عنوان داخیل کړئ"required>
+            </div>
+            <div class="input-group">
+                <label>شرکت نوم</label>
+                <input type="text"placeholder="د شرکت نوم داخیل کړئ"required>
+
+
+
+            </div>
+            <div class="input-group">
+                <label>معاش</label>
+                <input type="text" placeholder="معاش داخیل کړئ"required>
+            </div>
+            <div class="input-group">
+                <label>دندي ډول</label>
+                <select required>
+                    <option value="">یو انتخاب کړئ</option>
+                    <option>بشپړه وخت</option>
+                    <option>نیمه وخت</option>
+                    <select>
+            </div>
+            <div class="input-group">
+                <label>دندي تشریح</label>
+                <textarea rows="4"placeholder="دندي تشریح ولیکئ"required>
+            </div>
+            <button type="submit"class="btn">ثبتول</button>
+        </form>
+
+    </section>
+    <footer>
+        <p>د۲۰۲۶ کال دندو سیستم ټول حقوق خوندي دي</p>
+    </footer>
+</body>
+</html>
