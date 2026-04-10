@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>د وظیفو سیستم</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body
+        {
+            direction: rtl;
+            background-color: lightgray;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 8%;
+            background-color: blue;
+
+        }
+        .logo{
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .navbar nav a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+            font-size: 16px;
+
+        }
+        .navbar nav a:hover,.navbar nav .active{
+
+        text-decoration: underline;
+        }
+        .logo section{
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .login-box {
+            background-color: white;
+            padding: 40px;
+            width: 380px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px gray;
+
+        
+        }
+        .login-box h2{
+            text-align: center;
+            margin-bottom: 25px;
+            color: blue;
+
+
+        }
+        .input-group {
+margin-bottom: 18px;
+        }
+        .input-group label{
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .input-group input{
+            width: 100%;
+            padding: 10px;
+             border: 1px solid gray;
+             border-radius: 5px;
+             font-size: 14px;
+
+        }
+        .options{
+margin-bottom: 18px;
+font-size: 14px;
+        }
+        .btn{
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background-color: darkblue;
+        }
+        .register-link{
+            text-align: center;
+            margin-top: 18px;
+            font-size: 14px;
+        }
+        .register-link a{
+            color: blue;
+            text-decoration: none;
+        }
+        .register-link a:hover{
+            text-decoration: underline;
+
+        }
+        footer{
+            text-align: center;
+            padding: 15px;
+            background-color: blue;
+            color: white;
+            font-size: 14px;
+
+        }
+        @media(max-widht: 780px){
+            .navbar{
+                flex-direction: column;
+                text-align: center;
+            }
+            .navbar nav{
+                margin-top: 10px;
+
+
+            }
+            .login-box{
+                width: 90%;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">د وظیفو پیداکولو سیستم</div>
+        <nav>
+            <a href="home.html">کور پاڼه</a>
+            <a href="jobs.html">دندي</a>
+            <a href="login.html"class="active">ننوتل</a>"</a>
+        </nav>
+    </header>
+    <section class="login-section">
+        <div class="login-box"></div>
+            <h2>خپل حساب ته ننوتل</h2>
+            <form>
+                <div class="input group">
+                <label>بریښنالیک</label>
+                <input type="email"placeholder="خپل بریښنا لیک داخیل کړئ"required>
+                </div>
+                <div class="input- group">
+                    <label>(پاسورډ)</label>
+                    <input type="password"placeholder="خپل پاسورد داخیل کړئ"required>
+
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" placeholder="دا په یاد وساته">
+                    </label>
+                </div>
+                <button type="submit" class="btn">ننوتل</button>
+                <p class="register- link">
+                    <a href="register.html">تاسو اکاونټ نه لري راجیسټر وکړئ</a>
+
+                </p>
+
+            </form>
+</div>        
+
+    </section>
+    <footer>
+        <p> د2026 ددندو سیستم ټوله حقوق خوندي دي  </p>
+       
+    </footer>
+</body>
+</html>
