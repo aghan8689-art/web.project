@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ps" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دوظیفې جزیات</title>
+    <style>
+        .details-section{
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 15px;
+            background-color: lightgray;
+        }
+        .details-box{
+            background-color: white;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 700px;
+            margin: auto;
+            text-align: right;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px gray;
+        }
+        .details-box h1{
+            text-align: center;
+            margin-bottom: 25px;
+            color: blue;
+        }
+        .job-info p{
+            margin-bottom: 10px;
+            font-size: 15px;
+
+        }
+        .job-description h3 {
+            margin-bottom: 10px;
+            color: blue;
+        }
+        .job-description p {
+            line-height: 1.7;
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn:hover{
+            background-color: darkblue;
+
+        }
+        @media(max-width:768px){
+            .details-box{
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">د وظیفو سیستم</div>
+        <nav>
+            <a href="home.html">کور پاڼه</a>
+            <a href="job.html">دندي</a>
+            <a href="job-details.html" class="active"جزیات></a>
+        </nav>
+
+    </header>
+    <section class="details-section">
+        <div class="details-box"></div>
+        <h1>senaior web doveloper</h1>
+        <div class="job-info">
+        <p><strong>شرکت:</strong>teach company</p>
+        <p><strong>موقیعت:</strong>کابل،افغانستان</p>
+        <p><strong>معاش:</strong>50000afn</p>
+         <p><strong>دندي ډول:</strong>بشپړه وخت</p>
+         </div>
+<div class="job-descriotion">
+    <h3>دندي تشریح</h3>
+    <p>موږ د یو مسلکي ویب ډویلفر په لټه کي یو چي html,css,javascript,او backend برخو کي تجربه ولري غوښتونکي باید خپل کار ته پابند وي
+    </p>
+</div>
+<button class="btn">اوس غوښتنه وکړئ</button>
+</div>
+    </section>
+    <footer>
+        <p>د 2026 کال ددندو سیستم ټول حقوق خوندي دي</p>
+    </footer>
+</body>
+</html>
